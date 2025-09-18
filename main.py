@@ -1,13 +1,9 @@
 # main.py
 
-import database
 from ui_app import App
 
 if __name__ == "__main__":
-    # Pastikan database dan tabel sudah siap sebelum aplikasi jalan
-    database.init_db()
-    
-    # Membuat instance aplikasi dan menjalankannya
+    # Di customtkinter, tema sudah diatur di dalam ui_app.py
+    # Kita hanya perlu membuat dan menjalankan instance App
     app = App()
     app.mainloop()
-
